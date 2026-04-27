@@ -5,6 +5,18 @@ package main;
 public class Asztal {
     private Sor[] sorok = new Sor[4];
     private int db = 0;
+
+    public Asztal() {
+       
+    }
+    
+    public Asztal(Sor sor) {
+        
+    }
+    
+    public Asztal(Sor[] sorok) {
+        this.sorok = sorok;
+    }
     
     public void hozzaad(Sor sor){
         if (db < 4){
@@ -45,5 +57,4 @@ public class Asztal {
         }
         System.out.println("|");
     }
-
 }
